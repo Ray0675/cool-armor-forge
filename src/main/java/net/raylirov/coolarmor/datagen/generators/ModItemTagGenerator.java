@@ -1,0 +1,92 @@
+package net.raylirov.coolarmor.datagen.generators;
+
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.raylirov.coolarmor.CoolArmor;
+import net.raylirov.coolarmor.init.ModItems;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModItemTagGenerator extends ItemTagsProvider {
+
+
+    public ModItemTagGenerator(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider, CompletableFuture<TagLookup<Block>> pBlockTags, @Nullable ExistingFileHelper existingFileHelper) {
+        super(pOutput, pLookupProvider, pBlockTags, CoolArmor.MOD_ID, existingFileHelper);
+    }
+
+    @Override
+    protected void addTags(HolderLookup.Provider provider) {
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.NETHERITE_TINTED_HELMET.get(),
+
+                        ModItems.IRON_WOOLED_BOOTS.get(),
+
+                        ModItems.NETHERITE_GILDED_HELMET.get(),
+                        ModItems.NETHERITE_GILDED_CHESTPLATE.get(),
+                        ModItems.NETHERITE_GILDED_LEGGINGS.get(),
+                        ModItems.NETHERITE_GILDED_BOOTS.get(),
+
+                        ModItems.NETHERITE_TURTLE_HELMET.get(),
+                        ModItems.NETHERITE_TURTLE_CHESTPLATE.get(),
+                        ModItems.NETHERITE_TURTLE_LEGGINGS.get(),
+                        ModItems.NETHERITE_TURTLE_BOOTS.get(),
+
+                        ModItems.NETHERITE_LEATHERED_HELMET.get(),
+                        ModItems.NETHERITE_LEATHERED_CHESTPLATE.get(),
+                        ModItems.NETHERITE_LEATHERED_LEGGINGS.get(),
+                        ModItems.NETHERITE_LEATHERED_BOOTS.get(),
+
+                        ModItems.DIAMOND_LEATHERED_HELMET.get(),
+                        ModItems.DIAMOND_LEATHERED_CHESTPLATE.get(),
+                        ModItems.DIAMOND_LEATHERED_LEGGINGS.get(),
+                        ModItems.DIAMOND_LEATHERED_BOOTS.get(),
+
+                        ModItems.GOLD_LEATHERED_HELMET.get(),
+                        ModItems.GOLD_LEATHERED_CHESTPLATE.get(),
+                        ModItems.GOLD_LEATHERED_LEGGINGS.get(),
+                        ModItems.GOLD_LEATHERED_BOOTS.get(),
+
+                        ModItems.CHAIN_LEATHERED_HELMET.get(),
+                        ModItems.CHAIN_LEATHERED_CHESTPLATE.get(),
+                        ModItems.CHAIN_LEATHERED_LEGGINGS.get(),
+                        ModItems.CHAIN_LEATHERED_BOOTS.get(),
+
+                        ModItems.IRON_LEATHERED_HELMET.get(),
+                        ModItems.IRON_LEATHERED_CHESTPLATE.get(),
+                        ModItems.IRON_LEATHERED_LEGGINGS.get(),
+                        ModItems.IRON_LEATHERED_BOOTS.get());
+
+        this.tag(ItemTags.FREEZE_IMMUNE_WEARABLES)
+                .add(ModItems.NETHERITE_LEATHERED_HELMET.get(),
+                        ModItems.NETHERITE_LEATHERED_CHESTPLATE.get(),
+                        ModItems.NETHERITE_LEATHERED_LEGGINGS.get(),
+                        ModItems.NETHERITE_LEATHERED_BOOTS.get(),
+
+                        ModItems.DIAMOND_LEATHERED_HELMET.get(),
+                        ModItems.DIAMOND_LEATHERED_CHESTPLATE.get(),
+                        ModItems.DIAMOND_LEATHERED_LEGGINGS.get(),
+                        ModItems.DIAMOND_LEATHERED_BOOTS.get(),
+
+                        ModItems.GOLD_LEATHERED_HELMET.get(),
+                        ModItems.GOLD_LEATHERED_CHESTPLATE.get(),
+                        ModItems.GOLD_LEATHERED_LEGGINGS.get(),
+                        ModItems.GOLD_LEATHERED_BOOTS.get(),
+
+                        ModItems.CHAIN_LEATHERED_HELMET.get(),
+                        ModItems.CHAIN_LEATHERED_CHESTPLATE.get(),
+                        ModItems.CHAIN_LEATHERED_LEGGINGS.get(),
+                        ModItems.CHAIN_LEATHERED_BOOTS.get(),
+
+                        ModItems.IRON_LEATHERED_HELMET.get(),
+                        ModItems.IRON_LEATHERED_CHESTPLATE.get(),
+                        ModItems.IRON_LEATHERED_LEGGINGS.get(),
+                        ModItems.IRON_LEATHERED_BOOTS.get());
+
+    }
+}

@@ -1,0 +1,169 @@
+{
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "k_chain": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "coolarmor:chain_leathered_helmet"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:chain_leathered_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:chain_leathered_leggings"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:chain_leathered_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "k_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "coolarmor:diamond_leathered_helmet"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:diamond_leathered_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:diamond_leathered_leggings"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:diamond_leathered_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "k_gold": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "coolarmor:gold_leathered_helmet"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:gold_leathered_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:gold_leathered_leggings"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:gold_leathered_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "k_iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "coolarmor:iron_leathered_helmet"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:iron_leathered_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:iron_leathered_leggings"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:iron_leathered_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "k_netherite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "coolarmor:netherite_leathered_helmet"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:netherite_leathered_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:netherite_leathered_leggings"
+            ]
+          },
+          {
+            "items": [
+              "coolarmor:netherite_leathered_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "coolarmor.advancement.description.rdy_for_winter"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "coolarmor:iron_leathered_helmet",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "coolarmor.advancement.title.rdy_for_winter"
+    }
+  },
+  "requirements": [
+    [
+      "k_netherite",
+      "k_diamond",
+      "k_gold",
+      "k_chain",
+      "k_iron"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  },
+  "sends_telemetry_event": true
+}
