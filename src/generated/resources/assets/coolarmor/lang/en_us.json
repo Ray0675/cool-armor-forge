@@ -44,11 +44,21 @@
   "item.coolarmor.smithing_template.leather_upgrade.applies_to": "All armor, except leather",
   "item.coolarmor.smithing_template.leather_upgrade.base_slot_description": "Add any armor, except leather",
   "item.coolarmor.smithing_template.leather_upgrade.ingredients": "Leather",
+  "item.coolarmor.smithing_template.tinted_upgrade.additions_slot_description": "Add amethyst shard",
+  "item.coolarmor.smithing_template.tinted_upgrade.applies_to": "Netherite helmet",
+  "item.coolarmor.smithing_template.tinted_upgrade.base_slot_description": "Add netherite helmet",
+  "item.coolarmor.smithing_template.tinted_upgrade.ingredients": "Amethyst shard",
   "item.coolarmor.smithing_template.turtle_upgrade.additions_slot_description": "Add scute",
   "item.coolarmor.smithing_template.turtle_upgrade.applies_to": "Netherite armor",
   "item.coolarmor.smithing_template.turtle_upgrade.base_slot_description": "Add netherite armor",
   "item.coolarmor.smithing_template.turtle_upgrade.ingredients": "Scute",
+  "item.coolarmor.smithing_template.wooled_upgrade.additions_slot_description": "Add Wool",
+  "item.coolarmor.smithing_template.wooled_upgrade.applies_to": "Iron boots",
+  "item.coolarmor.smithing_template.wooled_upgrade.base_slot_description": "Add iron boots",
+  "item.coolarmor.smithing_template.wooled_upgrade.ingredients": "Wool",
   "upgrade.coolarmor.gilded_upgrade": "Gilded Upgrade",
   "upgrade.coolarmor.leather_upgrade": "Leather Upgrade",
-  "upgrade.coolarmor.turtle_upgrade": "Turtle Upgrade"
+  "upgrade.coolarmor.tinted_upgrade": "Tinted Upgrade",
+  "upgrade.coolarmor.turtle_upgrade": "Turtle Upgrade",
+  "upgrade.coolarmor.wooled_upgrade": "Wooled Upgrade"
 }

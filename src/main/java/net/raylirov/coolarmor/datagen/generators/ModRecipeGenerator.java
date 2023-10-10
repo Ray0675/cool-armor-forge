@@ -1,16 +1,21 @@
 package net.raylirov.coolarmor.datagen.generators;
 
+import com.mojang.datafixers.types.templates.Tag;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.raylirov.coolarmor.CoolArmor;
 import net.raylirov.coolarmor.init.ModItems;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder {
@@ -60,6 +65,10 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         gildedSmithing(consumer, Items.NETHERITE_LEGGINGS, RecipeCategory.COMBAT, ModItems.NETHERITE_GILDED_LEGGINGS.get());
         gildedSmithing(consumer, Items.NETHERITE_BOOTS, RecipeCategory.COMBAT, ModItems.NETHERITE_GILDED_BOOTS.get());
 
+        wooledSmithing(consumer, Items.IRON_BOOTS, RecipeCategory.COMBAT, ModItems.IRON_WOOLED_BOOTS.get());
+
+        tintedSmithing(consumer, Items.NETHERITE_HELMET, RecipeCategory.COMBAT, ModItems.NETHERITE_TINTED_HELMET.get());
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEATHER_UPGRADE_SMITHING_TEMPLATE.get(), 2)
                 .pattern("ASA")
@@ -89,6 +98,26 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .define('A', Items.DIAMOND)
                 .define('D', Items.GOLD_INGOT)
                 .unlockedBy(getHasName(ModItems.GILDED_UPGRADE_SMITHING_TEMPLATE.get()), has(ModItems.GILDED_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get(), 2)
+                .pattern("ASA")
+                .pattern("ADA")
+                .pattern("AAA")
+                .define('S', ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get())
+                .define('A', Items.DIAMOND)
+                .define('D', Items.AMETHYST_SHARD)
+                .unlockedBy(getHasName(ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get()), has(ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get(), 2)
+                .pattern("ASA")
+                .pattern("ADA")
+                .pattern("AAA")
+                .define('S', ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get())
+                .define('A', Items.DIAMOND)
+                .define('D', ItemTags.WOOL)
+                .unlockedBy(getHasName(ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get()), has(ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get()))
                 .save(consumer);
     }
 
@@ -140,6 +169,26 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                         has(Items.GOLD_INGOT))
                 .save(consumer,
                         new ResourceLocation(CoolArmor.MOD_ID, "smithing/gilded/" + getItemName(result) + "_smithing"));
+    }
+
+    protected static void wooledSmithing(Consumer<FinishedRecipe> consumer, Item ingredientItem, RecipeCategory category, Item result) {
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(ingredientItem),
+                        Ingredient.of(ItemTags.WOOL), category, result)
+                .unlocks("has_wool",
+                        has(ItemTags.WOOL))
+                .save(consumer,
+                        new ResourceLocation(CoolArmor.MOD_ID, "smithing/wooled/" + getItemName(result) + "_smithing"));
+    }
+
+    protected static void tintedSmithing(Consumer<FinishedRecipe> consumer, Item ingredientItem, RecipeCategory category, Item result) {
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(ingredientItem),
+                        Ingredient.of(Items.AMETHYST_SHARD), category, result)
+                .unlocks("has_amethyst_shard",
+                        has(Items.AMETHYST_SHARD))
+                .save(consumer,
+                        new ResourceLocation(CoolArmor.MOD_ID, "smithing/tinted/" + getItemName(result) + "_smithing"));
     }
 
 }

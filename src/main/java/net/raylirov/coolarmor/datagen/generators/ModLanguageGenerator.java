@@ -97,6 +97,18 @@ public class ModLanguageGenerator extends LanguageProvider {
             keyMap.put(itemTranslationKeyFor("smithing_template.gilded_upgrade.base_slot_description"), "Add netherite armor");
             keyMap.put(itemTranslationKeyFor("smithing_template.gilded_upgrade.ingredients"), "Gold");
 
+            keyMap.put(upgradeTranslationKeyFor("wooled_upgrade"), "Wooled Upgrade");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.additions_slot_description"), "Add Wool");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.applies_to"), "Iron boots");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.base_slot_description"), "Add iron boots");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.ingredients"), "Wool");
+
+            keyMap.put(upgradeTranslationKeyFor("tinted_upgrade"), "Tinted Upgrade");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.additions_slot_description"), "Add amethyst shard");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.applies_to"), "Netherite helmet");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.base_slot_description"), "Add netherite helmet");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.ingredients"), "Amethyst shard");
+
         }
 
         if (lang.equals("ru_ru")) {
@@ -167,6 +179,18 @@ public class ModLanguageGenerator extends LanguageProvider {
             keyMap.put(itemTranslationKeyFor("smithing_template.gilded_upgrade.applies_to"), "Незеритовой броне");
             keyMap.put(itemTranslationKeyFor("smithing_template.gilded_upgrade.base_slot_description"), "Поместите незеритовый доспех");
             keyMap.put(itemTranslationKeyFor("smithing_template.gilded_upgrade.ingredients"), "Золото");
+
+            keyMap.put(upgradeTranslationKeyFor("wooled_upgrade"), "Шерстяное улучшение");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.additions_slot_description"), "Поместите шерсть");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.applies_to"), "Железным ботинкам");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.base_slot_description"), "Поместите железные ботинки");
+            keyMap.put(itemTranslationKeyFor("smithing_template.wooled_upgrade.ingredients"), "Шерсть");
+
+            keyMap.put(upgradeTranslationKeyFor("tinted_upgrade"), "Тонированое улучшение");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.additions_slot_description"), "Поместите осколок аметиста");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.applies_to"), "Незеритовому шлему");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.base_slot_description"), "Поместите незеритовый шлем");
+            keyMap.put(itemTranslationKeyFor("smithing_template.tinted_upgrade.ingredients"), "Осколок аметиста");
         }
     }
 }

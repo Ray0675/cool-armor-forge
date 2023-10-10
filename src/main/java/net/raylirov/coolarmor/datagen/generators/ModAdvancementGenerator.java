@@ -51,7 +51,7 @@ public class ModAdvancementGenerator extends ForgeAdvancementProvider {
                     "turtle_power",
                     Advancement.Builder.advancement(),
                     FrameType.CHALLENGE)
-                    .parent(new ResourceLocation("nether/netherite_armor"))
+                    .parent(new ResourceLocation("nether/netherite_armor.json"))
                     .rewards(new AdvancementRewards.Builder().addExperience(50))
                     .addCriterion("k_armor", ArmorFilter.hasNetheriteTurtleArmor())
                     .save(consumer, new ResourceLocation(CoolArmor.MOD_ID, "turtle_power"), fileHelper);
@@ -60,7 +60,7 @@ public class ModAdvancementGenerator extends ForgeAdvancementProvider {
                     "gilded",
                     Advancement.Builder.advancement(),
                     FrameType.CHALLENGE)
-                    .parent(new ResourceLocation("nether/netherite_armor"))
+                    .parent(new ResourceLocation("nether/netherite_armor.json"))
                     .rewards(new AdvancementRewards.Builder().addExperience(50))
                     .addCriterion("k_armor", ArmorFilter.hasNetheriteGildedArmor())
                     .save(consumer, new ResourceLocation(CoolArmor.MOD_ID, "gilded"), fileHelper);

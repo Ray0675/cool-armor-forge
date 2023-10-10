@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-16T00:10:51.1098999	Item Models: coolarmor
+// 1.20.1	2023-10-16T23:35:17.847532	Item Models: coolarmor
 75bf4b6bdab69c1d186b466e962fc29e6176509b assets/coolarmor/models/item/chain_leathered_boots.json
 f2aafbb042e7f0e128d760679a51200239754ef6 assets/coolarmor/models/item/chain_leathered_boots_amethyst_trim.json
 05b5bd6bb7ea05f74b2de302f8960a1563641754 assets/coolarmor/models/item/chain_leathered_boots_copper_trim.json
@@ -331,4 +331,6 @@ aebc5d320239fe39cdc92aafc63d070e9c6d0e1f assets/coolarmor/models/item/netherite_
 e529acc58fbff7c84d6bdc6950386619098619bb assets/coolarmor/models/item/netherite_turtle_leggings_netherite_trim.json
 0c18eb289d8921be16f2b2da835b14e25966f478 assets/coolarmor/models/item/netherite_turtle_leggings_quartz_trim.json
 4c8c06b7496c880fb609fd613369893aa3ed098e assets/coolarmor/models/item/netherite_turtle_leggings_redstone_trim.json
+996e66e130b1cf8cdb7b04618e8a7b9fdd7c0c5c assets/coolarmor/models/item/tinted_upgrade_smithing_template.json
 11b1f3c599f79b46a35a49ab297ef839ad6ade7f assets/coolarmor/models/item/turtle_upgrade_smithing_template.json
+35420634db61ee0d205b5ee16315135d0db2c470 assets/coolarmor/models/item/wooled_upgrade_smithing_template.json

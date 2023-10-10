@@ -42,6 +42,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simpleItem(ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE);
+        simpleItem(ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE);
         simpleItem(ModItems.LEATHER_UPGRADE_SMITHING_TEMPLATE);
         simpleItem(ModItems.TURTLE_UPGRADE_SMITHING_TEMPLATE);
         simpleItem(ModItems.GILDED_UPGRADE_SMITHING_TEMPLATE);

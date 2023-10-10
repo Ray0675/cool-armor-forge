@@ -15,11 +15,11 @@ public class GildedSmithingTemplateItem extends SmithingTemplateItem {
 
     private static final ChatFormatting DESCRIPTION_FORMAT = ChatFormatting.BLUE;
     private static final ChatFormatting TITLE_FORMAT = ChatFormatting.GRAY;
-    private static final Component GILDED_UPGRADE_BASE_SLOT_DESCRIPTION = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.base_slot_description");
-    private static final Component GILDED_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.additions_slot_description");
-    private static final Component GILDED_UPGRADE = Component.translatable("upgrade." + CoolArmor.MOD_ID + ".gilded_upgrade").withStyle(TITLE_FORMAT);
-    private static final Component GILDED_UPGRADE_APPLIES_TO = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.applies_to").withStyle(DESCRIPTION_FORMAT);
-    private static final Component GILDED_UPGRADE_INGREDIENTS = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.ingredients").withStyle(DESCRIPTION_FORMAT);
+    private static final Component UPGRADE_BASE_SLOT_DESCRIPTION = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.base_slot_description");
+    private static final Component UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.additions_slot_description");
+    private static final Component UPGRADE = Component.translatable("upgrade." + CoolArmor.MOD_ID + ".gilded_upgrade").withStyle(TITLE_FORMAT);
+    private static final Component UPGRADE_APPLIES_TO = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.applies_to").withStyle(DESCRIPTION_FORMAT);
+    private static final Component UPGRADE_INGREDIENTS = Component.translatable("item." + CoolArmor.MOD_ID + ".smithing_template.gilded_upgrade.ingredients").withStyle(DESCRIPTION_FORMAT);
 
     private static final ResourceLocation EMPTY_SLOT_HELMET = new ResourceLocation("item/empty_armor_slot_helmet");
     private static final ResourceLocation EMPTY_SLOT_CHESTPLATE = new ResourceLocation("item/empty_armor_slot_chestplate");
@@ -27,16 +27,16 @@ public class GildedSmithingTemplateItem extends SmithingTemplateItem {
     private static final ResourceLocation EMPTY_SLOT_BOOTS = new ResourceLocation("item/empty_armor_slot_boots");
     private static final ResourceLocation EMPTY_SLOT_INGOT = new ResourceLocation("item/empty_slot_ingot");
 
-    private static List<ResourceLocation> createLeatherUpgradeIconList() {
+    private static List<ResourceLocation> createUpgradeIconList() {
         return List.of(EMPTY_SLOT_HELMET, EMPTY_SLOT_CHESTPLATE, EMPTY_SLOT_LEGGINGS, EMPTY_SLOT_BOOTS);
     }
 
-    private static List<ResourceLocation> createLeatherUpgradeMaterialList() {
+    private static List<ResourceLocation> createUpgradeMaterialList() {
         return List.of(EMPTY_SLOT_INGOT);
     }
 
-    public static GildedSmithingTemplateItem createLeatherUpgradeTemplate() {
-        return new GildedSmithingTemplateItem(GILDED_UPGRADE_APPLIES_TO, GILDED_UPGRADE_INGREDIENTS, GILDED_UPGRADE, GILDED_UPGRADE_BASE_SLOT_DESCRIPTION, GILDED_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createLeatherUpgradeIconList(), createLeatherUpgradeMaterialList());
+    public static GildedSmithingTemplateItem createUpgradeTemplate() {
+        return new GildedSmithingTemplateItem(UPGRADE_APPLIES_TO, UPGRADE_INGREDIENTS, UPGRADE, UPGRADE_BASE_SLOT_DESCRIPTION, UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createUpgradeIconList(), createUpgradeMaterialList());
     }
 
 }

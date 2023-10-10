@@ -1,19 +1,21 @@
 package net.raylirov.coolarmor.util;
 
 import net.minecraft.advancements.critereon.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.registries.RegistryObject;
 import net.raylirov.coolarmor.armor.ModArmorMaterials;
 import net.raylirov.coolarmor.init.ModItems;
 
 public class ArmorFilter {
 
-    public static boolean isWearingNetheriteTintedHelmet(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.NETHERITE_TINTED_HELMET.get());
+    public static boolean isWearingWooledBoots(LivingEntity wearer){
+        return wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.IRON_WOOLED_BOOTS.get());
     }
 
     // For IF in ModelGen
@@ -48,6 +50,7 @@ public class ArmorFilter {
 
 
     // For advancements
+
     public static InventoryChangeTrigger.TriggerInstance hasNetheriteLeatheredArmor() {
         return InventoryChangeTrigger.TriggerInstance.hasItems(
                 ModItems.NETHERITE_LEATHERED_HELMET.get(),

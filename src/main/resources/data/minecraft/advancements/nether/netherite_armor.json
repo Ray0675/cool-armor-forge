@@ -1,109 +1,20 @@
 {
   "parent": "minecraft:nether/obtain_ancient_debris",
   "criteria": {
-    "k_netherite_armor": {
+    "netherite_armor": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:netherite_helmet"
-            ]
+            "tag": "coolarmor:netherite_armor_helmet"
           },
           {
-            "items": [
-              "minecraft:netherite_chestplate"
-            ]
+            "tag": "coolarmor:netherite_armor_chestplate"
           },
           {
-            "items": [
-              "minecraft:netherite_leggings"
-            ]
+            "tag": "coolarmor:netherite_armor_leggings"
           },
           {
-            "items": [
-              "minecraft:netherite_boots"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "k_gilded_armor": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "coolarmor:netherite_gilded_helmet"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_gilded_chestplate"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_gilded_leggings"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_gilded_boots"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "k_leathered_armor": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "coolarmor:netherite_leathered_helmet"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_leathered_chestplate"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_leathered_leggings"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_leathered_boots"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "k_turtle_armor": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "coolarmor:netherite_turtle_helmet"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_turtle_chestplate"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_turtle_leggings"
-            ]
-          },
-          {
-            "items": [
-              "coolarmor:netherite_turtle_boots"
-            ]
+            "tag": "coolarmor:netherite_armor_boots"
           }
         ]
       },
@@ -128,10 +39,7 @@
   },
   "requirements": [
     [
-      "k_netherite_armor",
-      "k_turtle_armor",
-      "k_gilded_armor",
-      "k_leathered_armor"
+      "netherite_armor"
     ]
   ],
   "rewards": {

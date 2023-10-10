@@ -18,7 +18,11 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.cool_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        pOutput.accept(ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get());
+
                         pOutput.accept(ModItems.IRON_WOOLED_BOOTS.get());
+
+                        pOutput.accept(ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get());
 
                         pOutput.accept(ModItems.NETHERITE_TINTED_HELMET.get());
 

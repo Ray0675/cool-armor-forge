@@ -29,7 +29,8 @@ public class ThirstHudOverlay {
 
         if(item.is(ModItems.NETHERITE_TINTED_HELMET.get()) && Minecraft.getInstance().options.getCameraType().isFirstPerson()){
             for(int i = 0; i < 10; i++) {
-                poseStack.blit(BLUR_THIRST, 0, 0, -90, 0, 0, screenWidth, screenHeight, screenWidth, screenHeight);
+                poseStack.blit(BLUR_THIRST, 0, 0, -90, 0, 0,
+                        screenWidth, screenHeight, screenWidth, screenHeight);
             }
         }
 

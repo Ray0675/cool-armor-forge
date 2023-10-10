@@ -1,12 +1,15 @@
 package net.raylirov.coolarmor.datagen.generators;
 
+import com.sun.jna.platform.win32.WinUser;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.raylirov.coolarmor.CoolArmor;
+import net.raylirov.coolarmor.init.ModItemTags;
 import net.raylirov.coolarmor.init.ModItems;
 import org.jetbrains.annotations.Nullable;
 
@@ -87,6 +90,36 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.IRON_LEATHERED_CHESTPLATE.get(),
                         ModItems.IRON_LEATHERED_LEGGINGS.get(),
                         ModItems.IRON_LEATHERED_BOOTS.get());
+
+
+
+
+        this.tag(ModItemTags.NETHERITE_ARMOR_HELMET)
+                .add(Items.NETHERITE_HELMET,
+                        ModItems.NETHERITE_LEATHERED_HELMET.get(),
+                        ModItems.NETHERITE_GILDED_HELMET.get(),
+                        ModItems.NETHERITE_TURTLE_HELMET.get(),
+                        ModItems.NETHERITE_TINTED_HELMET.get());
+
+        this.tag(ModItemTags.NETHERITE_ARMOR_CHESTPLATE)
+                .add(Items.NETHERITE_CHESTPLATE,
+                        ModItems.NETHERITE_LEATHERED_CHESTPLATE.get(),
+                        ModItems.NETHERITE_GILDED_CHESTPLATE.get(),
+                        ModItems.NETHERITE_TURTLE_CHESTPLATE.get());
+
+        this.tag(ModItemTags.NETHERITE_ARMOR_LEGGINGS)
+                .add(Items.NETHERITE_LEGGINGS,
+                        ModItems.NETHERITE_LEATHERED_LEGGINGS.get(),
+                        ModItems.NETHERITE_GILDED_LEGGINGS.get(),
+                        ModItems.NETHERITE_TURTLE_LEGGINGS.get());
+
+        this.tag(ModItemTags.NETHERITE_ARMOR_BOOTS)
+                .add(Items.NETHERITE_BOOTS,
+                        ModItems.NETHERITE_LEATHERED_BOOTS.get(),
+                        ModItems.NETHERITE_GILDED_BOOTS.get(),
+                        ModItems.NETHERITE_TURTLE_BOOTS.get());
+
+
 
     }
 }
