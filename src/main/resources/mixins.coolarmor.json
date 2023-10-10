@@ -4,8 +4,11 @@
   "package": "net.raylirov.coolarmor.mixin",
   "refmap": "mixins.coolarmor.refmap.json",
   "mixins": [
+    "ModMagmaBlock",
     "ModPlayer",
-    "ModMagmaBlock"
+    "ModSculkSensorBlock",
+    "ModSculkShriekerBlock",
+    "ModVibrationSelector"
   ],
   "injectors": {
     "defaultRequire": 1

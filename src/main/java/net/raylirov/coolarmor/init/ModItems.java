@@ -7,9 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.raylirov.coolarmor.CoolArmor;
 import net.raylirov.coolarmor.armor.*;
-import net.raylirov.coolarmor.item.GildedSmithingTemplateItem;
-import net.raylirov.coolarmor.item.LeatherSmithingTemplateItem;
-import net.raylirov.coolarmor.item.TurtleSmithingTemplateItem;
+import net.raylirov.coolarmor.item.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -93,11 +91,15 @@ public class ModItems {
     */
 
     public static final RegistryObject<Item> LEATHER_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("leather_upgrade_smithing_template",
-            LeatherSmithingTemplateItem::createLeatherUpgradeTemplate);
+            LeatherSmithingTemplateItem::createUpgradeTemplate);
     public static final RegistryObject<Item> TURTLE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("turtle_upgrade_smithing_template",
-            TurtleSmithingTemplateItem::createLeatherUpgradeTemplate);
+            TurtleSmithingTemplateItem::createUpgradeTemplate);
     public static final RegistryObject<Item> GILDED_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("gilded_upgrade_smithing_template",
-            GildedSmithingTemplateItem::createLeatherUpgradeTemplate);
+            GildedSmithingTemplateItem::createUpgradeTemplate);
+    public static final RegistryObject<Item> WOOLED_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("wooled_upgrade_smithing_template",
+            WooledSmithingTemplateItem::createUpgradeTemplate);
+    public static final RegistryObject<Item> TINTED_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("tinted_upgrade_smithing_template",
+            TintedSmithingTemplateItem::createUpgradeTemplate);
 
 
     public static void register(IEventBus eventBus) {

@@ -28,5 +28,13 @@ public class ModGlobalLootModifiersGenerator extends GlobalLootModifierProvider 
         add("gilded_upgrade_smithing_template_from_bastion", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build() },
                 ModItems.GILDED_UPGRADE_SMITHING_TEMPLATE.get()));
+
+        add("tinted_upgrade_smithing_template_from_dragon", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build() },
+                ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get()));
+
+        add("wooled_upgrade_smithing_template_from_warden", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/warden")).build() },
+                ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get()));
     }
 }

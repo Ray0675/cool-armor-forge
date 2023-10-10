@@ -44,11 +44,21 @@
   "item.coolarmor.smithing_template.leather_upgrade.applies_to": "Любой броне, кроме кожаной",
   "item.coolarmor.smithing_template.leather_upgrade.base_slot_description": "Поместите любую броню, кроме кожаной",
   "item.coolarmor.smithing_template.leather_upgrade.ingredients": "Кожа",
+  "item.coolarmor.smithing_template.tinted_upgrade.additions_slot_description": "Поместите осколок аметиста",
+  "item.coolarmor.smithing_template.tinted_upgrade.applies_to": "Незеритовому шлему",
+  "item.coolarmor.smithing_template.tinted_upgrade.base_slot_description": "Поместите незеритовый шлем",
+  "item.coolarmor.smithing_template.tinted_upgrade.ingredients": "Осколок аметиста",
   "item.coolarmor.smithing_template.turtle_upgrade.additions_slot_description": "Поместите щиток",
   "item.coolarmor.smithing_template.turtle_upgrade.applies_to": "Незеритовой броне",
   "item.coolarmor.smithing_template.turtle_upgrade.base_slot_description": "Поместите незеритовый доспех",
   "item.coolarmor.smithing_template.turtle_upgrade.ingredients": "Щиток",
+  "item.coolarmor.smithing_template.wooled_upgrade.additions_slot_description": "Поместите шерсть",
+  "item.coolarmor.smithing_template.wooled_upgrade.applies_to": "Железным ботинкам",
+  "item.coolarmor.smithing_template.wooled_upgrade.base_slot_description": "Поместите железные ботинки",
+  "item.coolarmor.smithing_template.wooled_upgrade.ingredients": "Шерсть",
   "upgrade.coolarmor.gilded_upgrade": "Золочёное улучшение",
   "upgrade.coolarmor.leather_upgrade": "Кожаное улучшение",
-  "upgrade.coolarmor.turtle_upgrade": "Черепашье улучшение"
+  "upgrade.coolarmor.tinted_upgrade": "Тонированое улучшение",
+  "upgrade.coolarmor.turtle_upgrade": "Черепашье улучшение",
+  "upgrade.coolarmor.wooled_upgrade": "Шерстяное улучшение"
 }

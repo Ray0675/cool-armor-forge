@@ -12,8 +12,8 @@ import net.raylirov.coolarmor.init.ModItems;
 
 public class ArmorFilter {
 
-    public static boolean isWearingNetheriteTintedHelmet(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.NETHERITE_TINTED_HELMET.get());
+    public static boolean isWearingWooledBoots(LivingEntity wearer){
+        return wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.IRON_WOOLED_BOOTS.get());
     }
 
     // For IF in ModelGen

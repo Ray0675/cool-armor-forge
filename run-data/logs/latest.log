@@ -1,44 +1,44 @@
-[16окт.2023 00:10:44.704] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Ray\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.46, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, coolarmor, --all, --output, G:\minecraft\Mods\Forge\cool-armor-1-20-1\src\generated\resources, --existing, G:\minecraft\Mods\Forge\cool-armor-1-20-1\src\main\resources, --mixin.config, mixins.coolitems.json]
-[16окт.2023 00:10:44.708] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[16окт.2023 00:10:44.812] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[16окт.2023 00:10:44.869] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Ray/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[16окт.2023 00:10:45.187] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Ray\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.46\277ff7c640f0c8d702893a029a44ee29ef0e35b2\javafmllanguage-1.20.1-47.1.46.jar is missing mods.toml file
-[16окт.2023 00:10:45.191] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Ray\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.46\83f03e5e0a512e4d5d3bf75049acf7fa9fd2c685\lowcodelanguage-1.20.1-47.1.46.jar is missing mods.toml file
-[16окт.2023 00:10:45.194] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Ray\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.46\44aba90404009f73b7da0dbd6db9f5c3296351fe\mclanguage-1.20.1-47.1.46.jar is missing mods.toml file
-[16окт.2023 00:10:45.198] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Ray\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.46\564c0c5cf812168aaa92f968bc10a4572636d129\fmlcore-1.20.1-47.1.46.jar is missing mods.toml file
-[16окт.2023 00:10:45.260] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[16окт.2023 00:10:46.363] [main/WARN] [mixin/]: Compatibility level JAVA_17 specified by mixins.coolitems.json is higher than the maximum level supported by this version of mixin (JAVA_13).
-[16окт.2023 00:10:46.364] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[16окт.2023 00:10:46.364] [main/ERROR] [mixin/]: Mixin config mixins.coolitems.json does not specify "minVersion" property
-[16окт.2023 00:10:46.367] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Ray\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, coolarmor, --all, --output, G:\minecraft\Mods\Forge\cool-armor-1-20-1\src\generated\resources, --existing, G:\minecraft\Mods\Forge\cool-armor-1-20-1\src\main\resources]
-[16окт.2023 00:10:46.415] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
-[16окт.2023 00:10:46.416] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
-[16окт.2023 00:10:46.423] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
-[16окт.2023 00:10:46.423] [main/INFO] [mixin/]: Selecting config mixins.coolitems.json
-[16окт.2023 00:10:46.426] [main/WARN] [mixin/]: Reference map 'mixins.coolitems.refmap.json' for mixins.coolitems.json could not be read. If this is a development environment you can ignore this message
-[16окт.2023 00:10:46.428] [main/INFO] [mixin/]: Preparing mixins.coolitems.json (2)
-[16окт.2023 00:10:46.711] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [coolarmor]
-[16окт.2023 00:10:46.837] [main/INFO] [mixin/]: Mixing ModPlayer from mixins.coolitems.json into net.minecraft.world.entity.player.Player
-[16окт.2023 00:10:47.419] [main/INFO] [mixin/]: Mixing ModMagmaBlock from mixins.coolitems.json into net.minecraft.world.level.block.MagmaBlock
-[16окт.2023 00:10:50.186] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.46, for MC 1.20.1 with MCP 20230612.114412
-[16окт.2023 00:10:50.189] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.46 Initialized
-[16окт.2023 00:10:50.572] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ray/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[16окт.2023 00:10:50.573] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Ray/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[16окт.2023 00:10:50.682] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
-[16окт.2023 00:10:50.815] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 132 ms
-[16окт.2023 00:10:50.815] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
-[16окт.2023 00:10:50.818] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 2 ms
-[16окт.2023 00:10:50.818] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: ru_ru
-[16окт.2023 00:10:50.819] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: ru_ru finished after 1 ms
-[16окт.2023 00:10:50.820] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[16окт.2023 00:10:50.834] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 14 ms
-[16окт.2023 00:10:50.834] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: coolarmor
-[16окт.2023 00:10:51.077] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: coolarmor finished after 242 ms
-[16окт.2023 00:10:51.077] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : coolarmor
-[16окт.2023 00:10:51.089] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : coolarmor finished after 11 ms
-[16окт.2023 00:10:51.089] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id coolarmor
-[16окт.2023 00:10:51.093] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id coolarmor finished after 3 ms
-[16окт.2023 00:10:51.093] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id coolarmor
-[16окт.2023 00:10:51.105] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id coolarmor finished after 11 ms
-[16окт.2023 00:10:51.105] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 423 ms
-[16окт.2023 00:10:51.192] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 829, old count: 75, new count: 415, removed stale: 415, written: 414
+[16окт.2023 23:55:32.915] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\FullM\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.46, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, coolarmor, --all, --output, D:\modding\my\forge\cool-armor-forge\src\generated\resources, --existing, D:\modding\my\forge\cool-armor-forge\src\main\resources, --mixin.config, mixins.coolarmor.json]
+[16окт.2023 23:55:32.923] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[16окт.2023 23:55:33.117] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[16окт.2023 23:55:33.201] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/FullM/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[16окт.2023 23:55:33.775] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\FullM\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.46\277ff7c640f0c8d702893a029a44ee29ef0e35b2\javafmllanguage-1.20.1-47.1.46.jar is missing mods.toml file
+[16окт.2023 23:55:33.781] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\FullM\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.46\83f03e5e0a512e4d5d3bf75049acf7fa9fd2c685\lowcodelanguage-1.20.1-47.1.46.jar is missing mods.toml file
+[16окт.2023 23:55:33.787] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\FullM\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.46\44aba90404009f73b7da0dbd6db9f5c3296351fe\mclanguage-1.20.1-47.1.46.jar is missing mods.toml file
+[16окт.2023 23:55:33.794] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\FullM\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.46\564c0c5cf812168aaa92f968bc10a4572636d129\fmlcore-1.20.1-47.1.46.jar is missing mods.toml file
+[16окт.2023 23:55:33.908] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[16окт.2023 23:55:36.108] [main/WARN] [mixin/]: Compatibility level JAVA_17 specified by mixins.coolarmor.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[16окт.2023 23:55:36.109] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[16окт.2023 23:55:36.109] [main/ERROR] [mixin/]: Mixin config mixins.coolarmor.json does not specify "minVersion" property
+[16окт.2023 23:55:36.115] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\FullM\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, coolarmor, --all, --output, D:\modding\my\forge\cool-armor-forge\src\generated\resources, --existing, D:\modding\my\forge\cool-armor-forge\src\main\resources]
+[16окт.2023 23:55:36.220] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
+[16окт.2023 23:55:36.221] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+[16окт.2023 23:55:36.232] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[16окт.2023 23:55:36.232] [main/INFO] [mixin/]: Selecting config mixins.coolarmor.json
+[16окт.2023 23:55:36.238] [main/WARN] [mixin/]: Reference map 'mixins.coolarmor.refmap.json' for mixins.coolarmor.json could not be read. If this is a development environment you can ignore this message
+[16окт.2023 23:55:36.241] [main/INFO] [mixin/]: Preparing mixins.coolarmor.json (2)
+[16окт.2023 23:55:36.821] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [coolarmor]
+[16окт.2023 23:55:37.134] [main/INFO] [mixin/]: Mixing ModPlayer from mixins.coolarmor.json into net.minecraft.world.entity.player.Player
+[16окт.2023 23:55:38.775] [main/INFO] [mixin/]: Mixing ModMagmaBlock from mixins.coolarmor.json into net.minecraft.world.level.block.MagmaBlock
+[16окт.2023 23:55:44.663] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.46, for MC 1.20.1 with MCP 20230612.114412
+[16окт.2023 23:55:44.668] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.46 Initialized
+[16окт.2023 23:55:45.632] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/FullM/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[16окт.2023 23:55:45.632] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/FullM/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.1.46_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[16окт.2023 23:55:45.901] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
+[16окт.2023 23:55:46.160] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 259 ms
+[16окт.2023 23:55:46.160] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
+[16окт.2023 23:55:46.164] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 3 ms
+[16окт.2023 23:55:46.164] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: ru_ru
+[16окт.2023 23:55:46.167] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: ru_ru finished after 2 ms
+[16окт.2023 23:55:46.167] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[16окт.2023 23:55:46.192] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 24 ms
+[16окт.2023 23:55:46.192] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: coolarmor
+[16окт.2023 23:55:46.607] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: coolarmor finished after 414 ms
+[16окт.2023 23:55:46.607] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : coolarmor
+[16окт.2023 23:55:46.623] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : coolarmor finished after 14 ms
+[16окт.2023 23:55:46.623] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id coolarmor
+[16окт.2023 23:55:46.628] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id coolarmor finished after 5 ms
+[16окт.2023 23:55:46.628] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id coolarmor
+[16окт.2023 23:55:46.642] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id coolarmor finished after 13 ms
+[16окт.2023 23:55:46.642] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 741 ms
+[16окт.2023 23:55:46.661] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 423, old count: 422, new count: 423, removed stale: 1, written: 2
