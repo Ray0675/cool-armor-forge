@@ -12,6 +12,8 @@ public class ModItemTags {
     public static final TagKey<Item> NETHERITE_ARMOR_CHESTPLATE = newBind("netherite_armor_chestplate");
     public static final TagKey<Item> NETHERITE_ARMOR_LEGGINGS = newBind("netherite_armor_leggings");
     public static final TagKey<Item> NETHERITE_ARMOR_BOOTS = newBind("netherite_armor_boots");
+    public static final TagKey<Item> IRON_ARMOR = newBind("iron_armor");
+    public static final TagKey<Item> DIAMOND_ARMOR = newBind("diamond_armor");
 
     private static TagKey<Item> newBind(String pName) {
         return TagKey.create(Registries.ITEM, new ResourceLocation(CoolArmor.MOD_ID, pName));

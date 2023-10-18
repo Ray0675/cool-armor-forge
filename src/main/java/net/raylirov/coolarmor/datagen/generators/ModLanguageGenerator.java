@@ -29,7 +29,7 @@ public class ModLanguageGenerator extends LanguageProvider {
     private void gatherKeyMapData(){
         if (lang.equals("en_us")) {
             
-            keyMap.put(tabsTranslationKeyFor("cool_items_tab"), "Cool Items");
+            keyMap.put(tabsTranslationKeyFor("cool_items_tab"), "Cool Armor");
             
             keyMap.put(advancementTranslationKeyFor("rdy_for_winter", ModTranslationKeyTypeProvider.AdvancementKeySubType.TITLE), "Ready for Winter!");
             keyMap.put(advancementTranslationKeyFor("rdy_for_winter", ModTranslationKeyTypeProvider.AdvancementKeySubType.DESCRIPTION), "Get a full suit of Winterized armor.");
@@ -112,7 +112,7 @@ public class ModLanguageGenerator extends LanguageProvider {
         }
 
         if (lang.equals("ru_ru")) {
-            keyMap.put(tabsTranslationKeyFor("cool_items_tab"), "Cool Items");
+            keyMap.put(tabsTranslationKeyFor("cool_items_tab"), "Cool Armor");
 
             keyMap.put(advancementTranslationKeyFor("rdy_for_winter", ModTranslationKeyTypeProvider.AdvancementKeySubType.TITLE), "К Зиме готов!");
             keyMap.put(advancementTranslationKeyFor("rdy_for_winter", ModTranslationKeyTypeProvider.AdvancementKeySubType.DESCRIPTION), "Получите полный комплект утеплённой брони.");

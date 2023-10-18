@@ -119,6 +119,37 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.NETHERITE_GILDED_BOOTS.get(),
                         ModItems.NETHERITE_TURTLE_BOOTS.get());
 
+        this.tag(ModItemTags.IRON_ARMOR)
+                .add(Items.IRON_HELMET,
+                        Items.IRON_CHESTPLATE,
+                        Items.IRON_LEGGINGS,
+                        Items.IRON_BOOTS,
+                        ModItems.IRON_LEATHERED_HELMET.get(),
+                        ModItems.IRON_LEATHERED_CHESTPLATE.get(),
+                        ModItems.IRON_LEATHERED_LEGGINGS.get(),
+                        ModItems.IRON_LEATHERED_BOOTS.get(),
+                        ModItems.IRON_WOOLED_BOOTS.get());
+
+        this.tag(ModItemTags.DIAMOND_ARMOR)
+                .add(Items.DIAMOND_HELMET,
+                        Items.DIAMOND_CHESTPLATE,
+                        Items.DIAMOND_LEGGINGS,
+                        Items.DIAMOND_BOOTS,
+                        ModItems.DIAMOND_LEATHERED_HELMET.get(),
+                        ModItems.DIAMOND_LEATHERED_CHESTPLATE.get(),
+                        ModItems.DIAMOND_LEATHERED_LEGGINGS.get(),
+                        ModItems.DIAMOND_LEATHERED_BOOTS.get());
+
+        this.tag(ItemTags.PIGLIN_LOVED)
+                .add(ModItems.NETHERITE_GILDED_HELMET.get(),
+                        ModItems.NETHERITE_GILDED_CHESTPLATE.get(),
+                        ModItems.NETHERITE_GILDED_LEGGINGS.get(),
+                        ModItems.NETHERITE_GILDED_BOOTS.get(),
+                        ModItems.GOLD_LEATHERED_HELMET.get(),
+                        ModItems.GOLD_LEATHERED_CHESTPLATE.get(),
+                        ModItems.GOLD_LEATHERED_LEGGINGS.get(),
+                        ModItems.GOLD_LEATHERED_BOOTS.get());
+
 
 
     }
