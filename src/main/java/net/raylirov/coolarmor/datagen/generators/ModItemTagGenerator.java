@@ -1,6 +1,5 @@
 package net.raylirov.coolarmor.datagen.generators;
 
-import com.sun.jna.platform.win32.WinUser;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
