@@ -119,46 +119,4 @@ public class ArmorFilter {
         return wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.NETHERITE_GILDED_BOOTS.get());
     }
 
-    // For IDK for what
-    /*
-    public static boolean isWearingAnyLeatheredArmor(LivingEntity wearer){
-        return isWearingNetheriteLeatheredArmor(wearer) ||
-                isWearingDiamondLeatheredArmor(wearer) ||
-                isWearingGoldLeatheredArmor(wearer) ||
-                isWearingChainLeatheredArmor(wearer) ||
-                isWearingIronLeatheredArmor(wearer);
-    }
-
-    public static boolean isWearingNetheriteLeatheredArmor(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.NETHERITE_LEATHERED_HELMET.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.CHEST).is(ModItems.NETHERITE_LEATHERED_CHESTPLATE.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.LEGS).is(ModItems.NETHERITE_LEATHERED_LEGGINGS.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.NETHERITE_LEATHERED_BOOTS.get());
-    }
-    public static boolean isWearingDiamondLeatheredArmor(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.DIAMOND_LEATHERED_HELMET.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.CHEST).is(ModItems.DIAMOND_LEATHERED_CHESTPLATE.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.LEGS).is(ModItems.DIAMOND_LEATHERED_LEGGINGS.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.DIAMOND_LEATHERED_BOOTS.get());
-    }
-    public static boolean isWearingGoldLeatheredArmor(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.GOLD_LEATHERED_HELMET.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.CHEST).is(ModItems.GOLD_LEATHERED_CHESTPLATE.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.LEGS).is(ModItems.GOLD_LEATHERED_LEGGINGS.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.GOLD_LEATHERED_BOOTS.get());
-    }
-    public static boolean isWearingChainLeatheredArmor(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.CHAIN_LEATHERED_HELMET.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.CHEST).is(ModItems.CHAIN_LEATHERED_CHESTPLATE.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.LEGS).is(ModItems.CHAIN_LEATHERED_LEGGINGS.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.CHAIN_LEATHERED_BOOTS.get());
-    }
-    public static boolean isWearingIronLeatheredArmor(LivingEntity wearer){
-        return wearer.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.IRON_LEATHERED_HELMET.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.CHEST).is(ModItems.IRON_LEATHERED_CHESTPLATE.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.LEGS).is(ModItems.IRON_LEATHERED_LEGGINGS.get()) &&
-                wearer.getItemBySlot(EquipmentSlot.FEET).is(ModItems.IRON_LEATHERED_BOOTS.get());
-    }
-    */
-
 }
