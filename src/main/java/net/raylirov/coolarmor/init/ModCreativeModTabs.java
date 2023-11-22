@@ -13,9 +13,9 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CoolArmor.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> COOL_ITEMS_TAB = CREATIVE_MODE_TABS.register("cool_items_tab",
+    public static final RegistryObject<CreativeModeTab> COOL_ITEMS_TAB = CREATIVE_MODE_TABS.register(CoolArmor.MOD_ID + "_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NETHERITE_GILDED_HELMET.get()))
-                    .title(Component.translatable("creativetab.cool_items_tab"))
+                    .title(Component.translatable("creativetab." + CoolArmor.MOD_ID + "_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.WOOLED_UPGRADE_SMITHING_TEMPLATE.get());
@@ -25,6 +25,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.TINTED_UPGRADE_SMITHING_TEMPLATE.get());
 
                         pOutput.accept(ModItems.NETHERITE_TINTED_HELMET.get());
+                        pOutput.accept(ModItems.DIAMOND_TINTED_HELMET.get());
+                        pOutput.accept(ModItems.GOLDEN_TINTED_HELMET.get());
+                        pOutput.accept(ModItems.CHAINMAIL_TINTED_HELMET.get());
+                        pOutput.accept(ModItems.IRON_TINTED_HELMET.get());
+                        pOutput.accept(ModItems.LEATHER_TINTED_HELMET.get());
 
                         pOutput.accept(ModItems.GILDED_UPGRADE_SMITHING_TEMPLATE.get());
 
@@ -52,15 +57,15 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.DIAMOND_LEATHERED_LEGGINGS.get());
                         pOutput.accept(ModItems.DIAMOND_LEATHERED_BOOTS.get());
 
-                        pOutput.accept(ModItems.GOLD_LEATHERED_HELMET.get());
-                        pOutput.accept(ModItems.GOLD_LEATHERED_CHESTPLATE.get());
-                        pOutput.accept(ModItems.GOLD_LEATHERED_LEGGINGS.get());
-                        pOutput.accept(ModItems.GOLD_LEATHERED_BOOTS.get());
+                        pOutput.accept(ModItems.GOLDEN_LEATHERED_HELMET.get());
+                        pOutput.accept(ModItems.GOLDEN_LEATHERED_CHESTPLATE.get());
+                        pOutput.accept(ModItems.GOLDEN_LEATHERED_LEGGINGS.get());
+                        pOutput.accept(ModItems.GOLDEN_LEATHERED_BOOTS.get());
 
-                        pOutput.accept(ModItems.CHAIN_LEATHERED_HELMET.get());
-                        pOutput.accept(ModItems.CHAIN_LEATHERED_CHESTPLATE.get());
-                        pOutput.accept(ModItems.CHAIN_LEATHERED_LEGGINGS.get());
-                        pOutput.accept(ModItems.CHAIN_LEATHERED_BOOTS.get());
+                        pOutput.accept(ModItems.CHAINMAIL_LEATHERED_HELMET.get());
+                        pOutput.accept(ModItems.CHAINMAIL_LEATHERED_CHESTPLATE.get());
+                        pOutput.accept(ModItems.CHAINMAIL_LEATHERED_LEGGINGS.get());
+                        pOutput.accept(ModItems.CHAINMAIL_LEATHERED_BOOTS.get());
 
                         pOutput.accept(ModItems.IRON_LEATHERED_HELMET.get());
                         pOutput.accept(ModItems.IRON_LEATHERED_CHESTPLATE.get());

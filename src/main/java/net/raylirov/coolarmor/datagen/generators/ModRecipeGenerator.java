@@ -35,15 +35,15 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         leatherSmithing(consumer, Items.DIAMOND_LEGGINGS, RecipeCategory.COMBAT, ModItems.DIAMOND_LEATHERED_LEGGINGS.get());
         leatherSmithing(consumer, Items.DIAMOND_BOOTS, RecipeCategory.COMBAT, ModItems.DIAMOND_LEATHERED_BOOTS.get());
 
-        leatherSmithing(consumer, Items.GOLDEN_HELMET, RecipeCategory.COMBAT, ModItems.GOLD_LEATHERED_HELMET.get());
-        leatherSmithing(consumer, Items.GOLDEN_CHESTPLATE, RecipeCategory.COMBAT, ModItems.GOLD_LEATHERED_CHESTPLATE.get());
-        leatherSmithing(consumer, Items.GOLDEN_LEGGINGS, RecipeCategory.COMBAT, ModItems.GOLD_LEATHERED_LEGGINGS.get());
-        leatherSmithing(consumer, Items.GOLDEN_BOOTS, RecipeCategory.COMBAT, ModItems.GOLD_LEATHERED_BOOTS.get());
+        leatherSmithing(consumer, Items.GOLDEN_HELMET, RecipeCategory.COMBAT, ModItems.GOLDEN_LEATHERED_HELMET.get());
+        leatherSmithing(consumer, Items.GOLDEN_CHESTPLATE, RecipeCategory.COMBAT, ModItems.GOLDEN_LEATHERED_CHESTPLATE.get());
+        leatherSmithing(consumer, Items.GOLDEN_LEGGINGS, RecipeCategory.COMBAT, ModItems.GOLDEN_LEATHERED_LEGGINGS.get());
+        leatherSmithing(consumer, Items.GOLDEN_BOOTS, RecipeCategory.COMBAT, ModItems.GOLDEN_LEATHERED_BOOTS.get());
 
-        leatherSmithing(consumer, Items.CHAINMAIL_HELMET, RecipeCategory.COMBAT, ModItems.CHAIN_LEATHERED_HELMET.get());
-        leatherSmithing(consumer, Items.CHAINMAIL_CHESTPLATE, RecipeCategory.COMBAT, ModItems.CHAIN_LEATHERED_CHESTPLATE.get());
-        leatherSmithing(consumer, Items.CHAINMAIL_LEGGINGS, RecipeCategory.COMBAT, ModItems.CHAIN_LEATHERED_LEGGINGS.get());
-        leatherSmithing(consumer, Items.CHAINMAIL_BOOTS, RecipeCategory.COMBAT, ModItems.CHAIN_LEATHERED_BOOTS.get());
+        leatherSmithing(consumer, Items.CHAINMAIL_HELMET, RecipeCategory.COMBAT, ModItems.CHAINMAIL_LEATHERED_HELMET.get());
+        leatherSmithing(consumer, Items.CHAINMAIL_CHESTPLATE, RecipeCategory.COMBAT, ModItems.CHAINMAIL_LEATHERED_CHESTPLATE.get());
+        leatherSmithing(consumer, Items.CHAINMAIL_LEGGINGS, RecipeCategory.COMBAT, ModItems.CHAINMAIL_LEATHERED_LEGGINGS.get());
+        leatherSmithing(consumer, Items.CHAINMAIL_BOOTS, RecipeCategory.COMBAT, ModItems.CHAINMAIL_LEATHERED_BOOTS.get());
 
         leatherSmithing(consumer, Items.IRON_HELMET, RecipeCategory.COMBAT, ModItems.IRON_LEATHERED_HELMET.get());
         leatherSmithing(consumer, Items.IRON_CHESTPLATE, RecipeCategory.COMBAT, ModItems.IRON_LEATHERED_CHESTPLATE.get());
@@ -54,6 +54,8 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         netheriteSmithing(consumer, ModItems.DIAMOND_LEATHERED_CHESTPLATE.get(), RecipeCategory.COMBAT, ModItems.NETHERITE_LEATHERED_CHESTPLATE.get());
         netheriteSmithing(consumer, ModItems.DIAMOND_LEATHERED_LEGGINGS.get(), RecipeCategory.COMBAT, ModItems.NETHERITE_LEATHERED_LEGGINGS.get());
         netheriteSmithing(consumer, ModItems.DIAMOND_LEATHERED_BOOTS.get(), RecipeCategory.COMBAT, ModItems.NETHERITE_LEATHERED_BOOTS.get());
+
+        netheriteSmithing(consumer, ModItems.DIAMOND_TINTED_HELMET.get(), RecipeCategory.COMBAT, ModItems.NETHERITE_TINTED_HELMET.get());
 
         turtleHelmetSmithing(consumer, Items.NETHERITE_HELMET, RecipeCategory.COMBAT, ModItems.NETHERITE_TURTLE_HELMET.get());
         turtleSmithing(consumer, Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.NETHERITE_TURTLE_CHESTPLATE.get());
@@ -68,6 +70,11 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         wooledSmithing(consumer, Items.IRON_BOOTS, RecipeCategory.COMBAT, ModItems.IRON_WOOLED_BOOTS.get());
 
         tintedSmithing(consumer, Items.NETHERITE_HELMET, RecipeCategory.COMBAT, ModItems.NETHERITE_TINTED_HELMET.get());
+        tintedSmithing(consumer, Items.DIAMOND_HELMET, RecipeCategory.COMBAT, ModItems.DIAMOND_TINTED_HELMET.get());
+        tintedSmithing(consumer, Items.GOLDEN_HELMET, RecipeCategory.COMBAT, ModItems.GOLDEN_TINTED_HELMET.get());
+        tintedSmithing(consumer, Items.CHAINMAIL_HELMET, RecipeCategory.COMBAT, ModItems.CHAINMAIL_TINTED_HELMET.get());
+        tintedSmithing(consumer, Items.IRON_HELMET, RecipeCategory.COMBAT, ModItems.IRON_TINTED_HELMET.get());
+        tintedSmithing(consumer, Items.LEATHER_HELMET, RecipeCategory.COMBAT, ModItems.LEATHER_TINTED_HELMET.get());
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEATHER_UPGRADE_SMITHING_TEMPLATE.get(), 2)

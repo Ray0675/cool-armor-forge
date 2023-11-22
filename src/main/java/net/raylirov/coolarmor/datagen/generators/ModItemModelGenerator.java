@@ -14,6 +14,7 @@ import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.raylirov.coolarmor.CoolArmor;
+import net.raylirov.coolarmor.armor.ModArmorMaterials;
 import net.raylirov.coolarmor.init.ModItems;
 import net.raylirov.coolarmor.util.ArmorFilter;
 
@@ -49,6 +50,11 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.GILDED_UPGRADE_SMITHING_TEMPLATE);
 
         trimmedArmorItem(ModItems.NETHERITE_TINTED_HELMET);
+        trimmedArmorItem(ModItems.DIAMOND_TINTED_HELMET);
+        trimmedArmorItem(ModItems.GOLDEN_TINTED_HELMET);
+        trimmedArmorItem(ModItems.CHAINMAIL_TINTED_HELMET);
+        trimmedArmorItem(ModItems.IRON_TINTED_HELMET);
+        trimmedArmorItem(ModItems.LEATHER_TINTED_HELMET);
 
         trimmedArmorItem(ModItems.IRON_WOOLED_BOOTS);
 
@@ -72,15 +78,15 @@ public class ModItemModelGenerator extends ItemModelProvider {
         trimmedArmorItem(ModItems.DIAMOND_LEATHERED_LEGGINGS);
         trimmedArmorItem(ModItems.DIAMOND_LEATHERED_BOOTS);
 
-        trimmedArmorItem(ModItems.GOLD_LEATHERED_HELMET);
-        trimmedArmorItem(ModItems.GOLD_LEATHERED_CHESTPLATE);
-        trimmedArmorItem(ModItems.GOLD_LEATHERED_LEGGINGS);
-        trimmedArmorItem(ModItems.GOLD_LEATHERED_BOOTS);
+        trimmedArmorItem(ModItems.GOLDEN_LEATHERED_HELMET);
+        trimmedArmorItem(ModItems.GOLDEN_LEATHERED_CHESTPLATE);
+        trimmedArmorItem(ModItems.GOLDEN_LEATHERED_LEGGINGS);
+        trimmedArmorItem(ModItems.GOLDEN_LEATHERED_BOOTS);
 
-        trimmedArmorItem(ModItems.CHAIN_LEATHERED_HELMET);
-        trimmedArmorItem(ModItems.CHAIN_LEATHERED_CHESTPLATE);
-        trimmedArmorItem(ModItems.CHAIN_LEATHERED_LEGGINGS);
-        trimmedArmorItem(ModItems.CHAIN_LEATHERED_BOOTS);
+        trimmedArmorItem(ModItems.CHAINMAIL_LEATHERED_HELMET);
+        trimmedArmorItem(ModItems.CHAINMAIL_LEATHERED_CHESTPLATE);
+        trimmedArmorItem(ModItems.CHAINMAIL_LEATHERED_LEGGINGS);
+        trimmedArmorItem(ModItems.CHAINMAIL_LEATHERED_BOOTS);
 
         trimmedArmorItem(ModItems.IRON_LEATHERED_HELMET);
         trimmedArmorItem(ModItems.IRON_LEATHERED_CHESTPLATE);
@@ -110,25 +116,41 @@ public class ModItemModelGenerator extends ItemModelProvider {
                 String armorItemPath = "item/" + armorItem;
                 String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
                 String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
+                String tintedoverlay = "item/tinted_" + armorType + "_overlay";
+                String tintedleatheroverlay = "item/leather_tinted_" + armorType + "_overlay";
                 String leatheroverlay = "item/leathered_" + armorType + "_overlay";
                 String wooledoverlay = "item/wooled_" + armorType + "_overlay";
                 ResourceLocation armorItemResLoc = new ResourceLocation(MOD_ID, armorItemPath);
-                ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
+                ResourceLocation trimResLoc = new ResourceLocation(trimPath);
                 ResourceLocation trimNameResLoc = new ResourceLocation(MOD_ID, currentTrimName);
+                ResourceLocation tintedoverlayResLoc = new ResourceLocation(MOD_ID, tintedoverlay);
+                ResourceLocation tintedleatheroverlayResLoc = new ResourceLocation(MOD_ID, tintedleatheroverlay);
                 ResourceLocation leatheroverlayResLoc = new ResourceLocation(MOD_ID, leatheroverlay);
                 ResourceLocation wooledoverlayResLoc = new ResourceLocation(MOD_ID, wooledoverlay);
 
-                // This is used for making the ExistingFileHelper acknowledge that this texture exist, so this will
-                // avoid an IllegalArgumentException
                 existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
 
-                if (ArmorFilter.trimArmorAnyLeatheredArmor(itemRegistryObject)){
+                if (ArmorFilter.trimArmorAnyLeatherArmor(itemRegistryObject)){
+                    if (armorItem.getMaterial() == ModArmorMaterials.LEATHER_TINTED) {
+                        getBuilder(currentTrimName)
+                                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                                .texture("layer1", armorItemResLoc)
+                                .texture("layer0", tintedleatheroverlayResLoc)
+                                .texture("layer2", tintedoverlayResLoc)
+                                .texture("layer3", trimResLoc);
+                    } else {
+                        getBuilder(currentTrimName)
+                                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                                .texture("layer1", armorItemResLoc)
+                                .texture("layer0", leatheroverlayResLoc)
+                                .texture("layer2", trimResLoc);
+                    }
+                } else if(ArmorFilter.trimArmorAnyTintedHelmet(itemRegistryObject)){
                     getBuilder(currentTrimName)
                             .parent(new ModelFile.UncheckedModelFile("item/generated"))
                             .texture("layer1", armorItemResLoc)
-                            .texture("layer0", leatheroverlayResLoc)
+                            .texture("layer0", tintedoverlayResLoc)
                             .texture("layer2", trimResLoc);
-
                 } else if(ArmorFilter.trimArmorAnyWooledArmor(itemRegistryObject)){
                     getBuilder(currentTrimName)
                             .parent(new ModelFile.UncheckedModelFile("item/generated"))
@@ -136,8 +158,6 @@ public class ModItemModelGenerator extends ItemModelProvider {
                             .texture("layer0", wooledoverlayResLoc)
                             .texture("layer2", trimResLoc);
                 } else {
-
-                // Trimmed armorItem files
                     getBuilder(currentTrimName)
                             .parent(new ModelFile.UncheckedModelFile("item/generated"))
                             .texture("layer0", armorItemResLoc)
@@ -145,18 +165,34 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
                 }
 
-                if (ArmorFilter.trimArmorAnyLeatheredArmor(itemRegistryObject)){
-
+                if (ArmorFilter.trimArmorAnyLeatherArmor(itemRegistryObject)) {
+                    if (armorItem.getMaterial() == ModArmorMaterials.LEATHER_TINTED) {
+                        this.withExistingParent(itemRegistryObject.getId().getPath(),
+                                        mcLoc("item/generated"))
+                                .override()
+                                .model(new ModelFile.UncheckedModelFile(trimNameResLoc))
+                                .predicate(mcLoc("trim_type"), trimValue).end()
+                                .texture("layer0", new ResourceLocation(MOD_ID, "item/" + itemRegistryObject.getId().getPath()))
+                                .texture("layer2", new ResourceLocation(MOD_ID, "item/tinted_" + armorType + "_overlay"))
+                                .texture("layer1", new ResourceLocation(MOD_ID, "item/leather_tinted_" + armorType + "_overlay"));
+                    } else {
+                        this.withExistingParent(itemRegistryObject.getId().getPath(),
+                                        mcLoc("item/generated"))
+                                .override()
+                                .model(new ModelFile.UncheckedModelFile(trimNameResLoc))
+                                .predicate(mcLoc("trim_type"), trimValue).end()
+                                .texture("layer1", new ResourceLocation(MOD_ID, "item/" + itemRegistryObject.getId().getPath()))
+                                .texture("layer0", new ResourceLocation(MOD_ID, "item/leathered_" + armorType + "_overlay"));
+                    }
+                } else if (ArmorFilter.trimArmorAnyTintedHelmet(itemRegistryObject)) {
                     this.withExistingParent(itemRegistryObject.getId().getPath(),
                                     mcLoc("item/generated"))
                             .override()
                             .model(new ModelFile.UncheckedModelFile(trimNameResLoc))
                             .predicate(mcLoc("trim_type"), trimValue).end()
                             .texture("layer1", new ResourceLocation(MOD_ID, "item/" + itemRegistryObject.getId().getPath()))
-                            .texture("layer0", new ResourceLocation(MOD_ID, "item/leathered_" + armorType + "_overlay"));
-
-                } else if (ArmorFilter.trimArmorAnyWooledArmor(itemRegistryObject)){
-
+                            .texture("layer0", new ResourceLocation(MOD_ID, "item/tinted_" + armorType + "_overlay"));
+                } else if (ArmorFilter.trimArmorAnyWooledArmor(itemRegistryObject)) {
                     this.withExistingParent(itemRegistryObject.getId().getPath(),
                                     mcLoc("item/generated"))
                             .override()
@@ -164,7 +200,6 @@ public class ModItemModelGenerator extends ItemModelProvider {
                             .predicate(mcLoc("trim_type"), trimValue).end()
                             .texture("layer1", new ResourceLocation(MOD_ID, "item/" + itemRegistryObject.getId().getPath()))
                             .texture("layer0", new ResourceLocation(MOD_ID, "item/wooled_" + armorType + "_overlay"));
-
                 }
                 else {
                     this.withExistingParent(itemRegistryObject.getId().getPath(),
@@ -182,12 +217,6 @@ public class ModItemModelGenerator extends ItemModelProvider {
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(CoolArmor.MOD_ID,"item/" + item.getId().getPath()));
-    }
-
-    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(CoolArmor.MOD_ID,"item/" + item.getId().getPath()));
     }
 

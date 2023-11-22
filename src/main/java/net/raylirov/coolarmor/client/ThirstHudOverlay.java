@@ -10,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.gui.overlay.IGuiOverlay;
 import net.raylirov.coolarmor.CoolArmor;
 import net.raylirov.coolarmor.init.ModItems;
+import net.raylirov.coolarmor.util.ArmorFilter;
 
 public class ThirstHudOverlay {
     public static final ResourceLocation BLUR_THIRST = new ResourceLocation(CoolArmor.MOD_ID,
@@ -24,10 +25,7 @@ public class ThirstHudOverlay {
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, BLUR_THIRST);
 
-
-        ItemStack item = Minecraft.getInstance().player.getItemBySlot(EquipmentSlot.HEAD);
-
-        if(item.is(ModItems.NETHERITE_TINTED_HELMET.get()) && Minecraft.getInstance().options.getCameraType().isFirstPerson()){
+        if(ArmorFilter.isWearingAnyTintedHelmet() && Minecraft.getInstance().options.getCameraType().isFirstPerson()){
             for(int i = 0; i < 10; i++) {
                 poseStack.blit(BLUR_THIRST, 0, 0, -90, 0, 0,
                         screenWidth, screenHeight, screenWidth, screenHeight);

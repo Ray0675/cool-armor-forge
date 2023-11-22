@@ -8,17 +8,18 @@
     "coolarmor:diamond_leathered_chestplate",
     "coolarmor:diamond_leathered_leggings",
     "coolarmor:diamond_leathered_boots",
-    "coolarmor:gold_leathered_helmet",
-    "coolarmor:gold_leathered_chestplate",
-    "coolarmor:gold_leathered_leggings",
-    "coolarmor:gold_leathered_boots",
-    "coolarmor:chain_leathered_helmet",
-    "coolarmor:chain_leathered_chestplate",
-    "coolarmor:chain_leathered_leggings",
-    "coolarmor:chain_leathered_boots",
+    "coolarmor:golden_leathered_helmet",
+    "coolarmor:golden_leathered_chestplate",
+    "coolarmor:golden_leathered_leggings",
+    "coolarmor:golden_leathered_boots",
+    "coolarmor:chainmail_leathered_helmet",
+    "coolarmor:chainmail_leathered_chestplate",
+    "coolarmor:chainmail_leathered_leggings",
+    "coolarmor:chainmail_leathered_boots",
     "coolarmor:iron_leathered_helmet",
     "coolarmor:iron_leathered_chestplate",
     "coolarmor:iron_leathered_leggings",
-    "coolarmor:iron_leathered_boots"
+    "coolarmor:iron_leathered_boots",
+    "coolarmor:leather_tinted_helmet"
   ]
 }

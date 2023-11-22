@@ -14,23 +14,23 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(VibrationSelector.class)
 public class ModVibrationSelector {
     @Inject(method = "shouldReplaceVibration", at = @At("HEAD"), cancellable = true)
-    void injectShouldReplaceVibration(final VibrationInfo vibration, final long tick, final CallbackInfoReturnable<Object> cir) {
+    void injectShouldReplaceVibration(final VibrationInfo vibration, final long tick, final CallbackInfoReturnable<Boolean> cir) {
         final Entity entity = vibration.entity();
         final GameEvent event = vibration.gameEvent();
         if (entity instanceof LivingEntity) {
             final LivingEntity pPlayer = (LivingEntity)entity;
             if (ArmorFilter.isWearingWooledBoots(pPlayer)) {
                 if (event.equals(GameEvent.HIT_GROUND)) {
-                    cir.setReturnValue((Object) false);
+                    cir.setReturnValue(false);
                 }
                 if (event.equals(GameEvent.SWIM)) {
-                    cir.setReturnValue((Object) false);
+                    cir.setReturnValue(false);
                 }
                 if (event.equals(GameEvent.STEP)) {
-                    cir.setReturnValue((Object) false);
+                    cir.setReturnValue(false);
                 }
                 if (event.equals(GameEvent.ENTITY_DAMAGE)) {
-                    cir.setReturnValue((Object) false);
+                    cir.setReturnValue(false);
                 }
             }
         }

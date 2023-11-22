@@ -55,7 +55,6 @@ public class ModLocalizationProvider implements DataProvider {
 
         var path = this.generator.getPackOutput().getOutputFolder().resolve("assets/coolitems/lang/en_us.json");
 
-        // Dump the translation in ascending order
         var sorted = new TreeMap<>(localizations);
         var jsonLocalization = new JsonObject();
         for (var entry : sorted.entrySet()) {

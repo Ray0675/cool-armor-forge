@@ -9,24 +9,32 @@ import net.raylirov.coolarmor.CoolArmor;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-
-
-    NETHERITE_GILDED("netherite_gilded", 37, new int[]{ 3, 8, 6, 3 }, 16,
+    NETHERITE_GILDED("netherite_gilded", 37, new int[]{ 3, 8, 6, 3 }, 15,
             SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(Items.NETHERITE_INGOT)),
 
-    NETHERITE_TURTLE("netherite_turtle", 37, new int[]{ 3, 8, 6, 3 }, 16,
+    NETHERITE_TURTLE("netherite_turtle", 37, new int[]{ 3, 8, 6, 3 }, 15,
             SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(Items.NETHERITE_INGOT)),
 
-    NETHERITE_TINDED("netherite_tinted", 37, new int[]{ 3, 8, 6, 3 }, 16,
+    NETHERITE_TINTED("netherite_tinted", 37, new int[]{ 3, 8, 6, 3 }, 15,
     SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(Items.NETHERITE_INGOT)),
+    DIAMOND_TINTED("diamond_tinted", 33, new int[]{ 3, 8, 6, 3 }, 10,
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0f, 0.0f, () -> Ingredient.of(Items.DIAMOND)),
+    GOLDEN_TINTED("golden_tinted", 7, new int[]{ 2, 5, 3, 1 }, 25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 0.0f, 0.0f, () -> Ingredient.of(Items.GOLD_INGOT)),
+    CHAINMAIL_TINTED("chainmail_tinted", 15, new int[]{ 2, 5, 4, 1 }, 12,
+            SoundEvents.ARMOR_EQUIP_CHAIN, 0.0f, 0.0f, () -> Ingredient.of(Items.IRON_INGOT)),
+    IRON_TINTED("iron_tinted", 15, new int[]{ 3, 6, 5, 2 }, 9,
+            SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.of(Items.IRON_INGOT)),
+    LEATHER_TINTED("leather_tinted", 5, new int[]{ 1, 3, 2, 1 }, 15,
+            SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.of(Items.LEATHER)),
 
-    NETHERITE_LEATHERED("netherite_leathered", 37, new int[]{ 3, 8, 6, 3 }, 16,
+    NETHERITE_LEATHERED("netherite_leathered", 37, new int[]{ 3, 8, 6, 3 }, 15,
     SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(Items.NETHERITE_INGOT)),
     DIAMOND_LEATHERED("diamond_leathered", 33, new int[]{ 3, 8, 6, 3 }, 10,
     SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0f, 0.0f, () -> Ingredient.of(Items.DIAMOND)),
-    GOLD_LEATHERED("gold_leathered", 7, new int[]{ 2, 5, 3, 1 }, 25,
+    GOLDEN_LEATHERED("golden_leathered", 7, new int[]{ 2, 5, 3, 1 }, 25,
     SoundEvents.ARMOR_EQUIP_GOLD, 0.0f, 0.0f, () -> Ingredient.of(Items.GOLD_INGOT)),
-    CHAIN_LEATHERED("chain_leathered", 15, new int[]{ 2, 5, 4, 1 }, 12,
+    CHAINMAIL_LEATHERED("chainmail_leathered", 15, new int[]{ 2, 5, 4, 1 }, 12,
     SoundEvents.ARMOR_EQUIP_CHAIN, 0.0f, 0.0f, () -> Ingredient.of(Items.IRON_INGOT)),
     IRON_LEATHERED("iron_leathered", 15, new int[]{ 3, 6, 5, 2 }, 9,
     SoundEvents.ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.of(Items.IRON_INGOT)),

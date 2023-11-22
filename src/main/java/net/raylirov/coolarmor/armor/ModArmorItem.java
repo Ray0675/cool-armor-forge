@@ -10,10 +10,7 @@ public class ModArmorItem extends ArmorItem {
     }
 
     public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer){
-        return this.material == ModArmorMaterials.NETHERITE_GILDED;
+        return this.material == ModArmorMaterials.NETHERITE_GILDED ||
+                this.material == ModArmorMaterials.GOLDEN_TINTED;
     }
-
-
-
-
 }

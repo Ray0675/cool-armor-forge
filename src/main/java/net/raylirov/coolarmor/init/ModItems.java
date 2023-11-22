@@ -1,6 +1,5 @@
 package net.raylirov.coolarmor.init;
 
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,13 +17,6 @@ public class ModItems {
     /*
     ARMOR
     */
-
-    public static final RegistryObject<Item> NETHERITE_TINTED_HELMET = ITEMS.register("netherite_tinted_helmet",
-            () -> new ModArmorItem(ModArmorMaterials.NETHERITE_TINDED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
-
-    public static final RegistryObject<Item> IRON_WOOLED_BOOTS = ITEMS.register("iron_wooled_boots",
-            () -> new WooledArmorItem(ModArmorMaterials.IRON_WOOLED, ArmorItem.Type.BOOTS, new Item.Properties()));
-
     public static final RegistryObject<Item> NETHERITE_GILDED_HELMET = ITEMS.register("netherite_gilded_helmet",
             () -> new ModArmorItem(ModArmorMaterials.NETHERITE_GILDED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> NETHERITE_GILDED_CHESTPLATE = ITEMS.register("netherite_gilded_chestplate",
@@ -61,23 +53,23 @@ public class ModItems {
     public static final RegistryObject<Item> DIAMOND_LEATHERED_BOOTS = ITEMS.register("diamond_leathered_boots",
             () -> new LeatheredArmorItem(ModArmorMaterials.DIAMOND_LEATHERED, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> GOLD_LEATHERED_HELMET = ITEMS.register("gold_leathered_helmet",
-            () -> new LeatheredArmorItem(ModArmorMaterials.GOLD_LEATHERED, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> GOLD_LEATHERED_CHESTPLATE = ITEMS.register("gold_leathered_chestplate",
-            () -> new LeatheredArmorItem(ModArmorMaterials.GOLD_LEATHERED, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final RegistryObject<Item> GOLD_LEATHERED_LEGGINGS = ITEMS.register("gold_leathered_leggings",
-            () -> new LeatheredArmorItem(ModArmorMaterials.GOLD_LEATHERED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final RegistryObject<Item> GOLD_LEATHERED_BOOTS = ITEMS.register("gold_leathered_boots",
-            () -> new LeatheredArmorItem(ModArmorMaterials.GOLD_LEATHERED, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_LEATHERED_HELMET = ITEMS.register("golden_leathered_helmet",
+            () -> new LeatheredArmorItem(ModArmorMaterials.GOLDEN_LEATHERED, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_LEATHERED_CHESTPLATE = ITEMS.register("golden_leathered_chestplate",
+            () -> new LeatheredArmorItem(ModArmorMaterials.GOLDEN_LEATHERED, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_LEATHERED_LEGGINGS = ITEMS.register("golden_leathered_leggings",
+            () -> new LeatheredArmorItem(ModArmorMaterials.GOLDEN_LEATHERED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_LEATHERED_BOOTS = ITEMS.register("golden_leathered_boots",
+            () -> new LeatheredArmorItem(ModArmorMaterials.GOLDEN_LEATHERED, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> CHAIN_LEATHERED_HELMET = ITEMS.register("chain_leathered_helmet",
-            () -> new LeatheredArmorItem(ModArmorMaterials.CHAIN_LEATHERED, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> CHAIN_LEATHERED_CHESTPLATE = ITEMS.register("chain_leathered_chestplate",
-            () -> new LeatheredArmorItem(ModArmorMaterials.CHAIN_LEATHERED, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final RegistryObject<Item> CHAIN_LEATHERED_LEGGINGS = ITEMS.register("chain_leathered_leggings",
-            () -> new LeatheredArmorItem(ModArmorMaterials.CHAIN_LEATHERED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final RegistryObject<Item> CHAIN_LEATHERED_BOOTS = ITEMS.register("chain_leathered_boots",
-            () -> new LeatheredArmorItem(ModArmorMaterials.CHAIN_LEATHERED, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> CHAINMAIL_LEATHERED_HELMET = ITEMS.register("chainmail_leathered_helmet",
+            () -> new LeatheredArmorItem(ModArmorMaterials.CHAINMAIL_LEATHERED, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> CHAINMAIL_LEATHERED_CHESTPLATE = ITEMS.register("chainmail_leathered_chestplate",
+            () -> new LeatheredArmorItem(ModArmorMaterials.CHAINMAIL_LEATHERED, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> CHAINMAIL_LEATHERED_LEGGINGS = ITEMS.register("chainmail_leathered_leggings",
+            () -> new LeatheredArmorItem(ModArmorMaterials.CHAINMAIL_LEATHERED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> CHAINMAIL_LEATHERED_BOOTS = ITEMS.register("chainmail_leathered_boots",
+            () -> new LeatheredArmorItem(ModArmorMaterials.CHAINMAIL_LEATHERED, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> IRON_LEATHERED_HELMET = ITEMS.register("iron_leathered_helmet",
             () -> new LeatheredArmorItem(ModArmorMaterials.IRON_LEATHERED, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -87,6 +79,22 @@ public class ModItems {
             () -> new LeatheredArmorItem(ModArmorMaterials.IRON_LEATHERED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> IRON_LEATHERED_BOOTS = ITEMS.register("iron_leathered_boots",
             () -> new LeatheredArmorItem(ModArmorMaterials.IRON_LEATHERED, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> NETHERITE_TINTED_HELMET = ITEMS.register("netherite_tinted_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.NETHERITE_TINTED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> DIAMOND_TINTED_HELMET = ITEMS.register("diamond_tinted_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.DIAMOND_TINTED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> GOLDEN_TINTED_HELMET = ITEMS.register("golden_tinted_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.GOLDEN_TINTED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> CHAINMAIL_TINTED_HELMET = ITEMS.register("chainmail_tinted_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.CHAINMAIL_TINTED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> IRON_TINTED_HELMET = ITEMS.register("iron_tinted_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.IRON_TINTED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> LEATHER_TINTED_HELMET = ITEMS.register("leather_tinted_helmet",
+            () -> new LeatheredArmorItem(ModArmorMaterials.LEATHER_TINTED, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> IRON_WOOLED_BOOTS = ITEMS.register("iron_wooled_boots",
+            () -> new WooledArmorItem(ModArmorMaterials.IRON_WOOLED, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     /*
     ARMOR

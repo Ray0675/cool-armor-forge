@@ -35,20 +35,22 @@ public class ClientEvents {
                     ModItems.DIAMOND_LEATHERED_LEGGINGS.get(),
                     ModItems.DIAMOND_LEATHERED_BOOTS.get(),
 
-                    ModItems.GOLD_LEATHERED_HELMET.get(),
-                    ModItems.GOLD_LEATHERED_CHESTPLATE.get(),
-                    ModItems.GOLD_LEATHERED_LEGGINGS.get(),
-                    ModItems.GOLD_LEATHERED_BOOTS.get(),
+                    ModItems.GOLDEN_LEATHERED_HELMET.get(),
+                    ModItems.GOLDEN_LEATHERED_CHESTPLATE.get(),
+                    ModItems.GOLDEN_LEATHERED_LEGGINGS.get(),
+                    ModItems.GOLDEN_LEATHERED_BOOTS.get(),
 
-                    ModItems.CHAIN_LEATHERED_HELMET.get(),
-                    ModItems.CHAIN_LEATHERED_CHESTPLATE.get(),
-                    ModItems.CHAIN_LEATHERED_LEGGINGS.get(),
-                    ModItems.CHAIN_LEATHERED_BOOTS.get(),
+                    ModItems.CHAINMAIL_LEATHERED_HELMET.get(),
+                    ModItems.CHAINMAIL_LEATHERED_CHESTPLATE.get(),
+                    ModItems.CHAINMAIL_LEATHERED_LEGGINGS.get(),
+                    ModItems.CHAINMAIL_LEATHERED_BOOTS.get(),
 
                     ModItems.IRON_LEATHERED_HELMET.get(),
                     ModItems.IRON_LEATHERED_CHESTPLATE.get(),
                     ModItems.IRON_LEATHERED_LEGGINGS.get(),
-                    ModItems.IRON_LEATHERED_BOOTS.get()
+                    ModItems.IRON_LEATHERED_BOOTS.get(),
+
+                    ModItems.LEATHER_TINTED_HELMET.get()
             );
 
             event.register(new ItemColor() {

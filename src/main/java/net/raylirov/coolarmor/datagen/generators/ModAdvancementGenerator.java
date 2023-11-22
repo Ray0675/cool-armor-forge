@@ -33,20 +33,6 @@ public class ModAdvancementGenerator extends ForgeAdvancementProvider {
         @Override
         public void generate(HolderLookup.@NotNull Provider registries, @NotNull Consumer<Advancement> consumer, @NotNull ExistingFileHelper fileHelper) {
 
-            Advancement leatherAdvancement = withDisplay(ModItems.IRON_LEATHERED_HELMET.get(),
-                    "rdy_for_winter",
-                    Advancement.Builder.advancement(),
-                    FrameType.TASK)
-                    .parent(new ResourceLocation("story/root"))
-                    .rewards(new AdvancementRewards.Builder().addExperience(50))
-                    .addCriterion("k_netherite", ArmorFilter.hasNetheriteLeatheredArmor())
-                    .addCriterion("k_diamond", ArmorFilter.hasDiamondLeatheredArmor())
-                    .addCriterion("k_gold", ArmorFilter.hasGoldLeatheredArmor())
-                    .addCriterion("k_chain", ArmorFilter.hasChainLeatheredArmor())
-                    .addCriterion("k_iron", ArmorFilter.hasIronLeatheredArmor())
-                    .requirements(RequirementsStrategy.OR)
-                    .save(consumer, new ResourceLocation(CoolArmor.MOD_ID, "rdy_for_winter"), fileHelper);
-
             Advancement turtleAdvancement = withDisplay(ModItems.NETHERITE_TURTLE_HELMET.get(),
                     "turtle_power",
                     Advancement.Builder.advancement(),

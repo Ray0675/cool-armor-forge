@@ -14,7 +14,6 @@ public class ModGlobalLootModifiersGenerator extends GlobalLootModifierProvider 
     public ModGlobalLootModifiersGenerator(PackOutput output) {
         super(output, CoolArmor.MOD_ID);
     }
-    // "chests/underwater_ruin_big"
     @Override
     protected void start() {
         add("leather_upgrade_smithing_template_from_igloo", new AddItemModifier(new LootItemCondition[] {

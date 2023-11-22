@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.raylirov.coolarmor.CoolArmor;
 import net.raylirov.coolarmor.armor.ModArmorItem;
 import net.raylirov.coolarmor.init.ModItems;
+import net.raylirov.coolarmor.util.ArmorFilter;
 import org.jetbrains.annotations.ApiStatus;
 
 public class Events {
@@ -33,7 +34,7 @@ public class Events {
 
             for (ItemStack stack : player.getArmorSlots()) {
                 Item item = stack.getItem();
-                if (item instanceof ModArmorItem && player.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.NETHERITE_TINTED_HELMET.get())) {
+                if (item instanceof ModArmorItem && ArmorFilter.isWearingAnyTintedHelmet(event)) {
                     event.setCanceled(true);
                 }
             }
@@ -45,6 +46,8 @@ public class Events {
 
         @SubscribeEvent
         public static void handle(FMLCommonSetupEvent event) {
+
+            CauldronInteraction.WATER.put(ModItems.LEATHER_TINTED_HELMET.get(), CauldronInteraction.DYED_ITEM);
 
             CauldronInteraction.WATER.put(ModItems.IRON_WOOLED_BOOTS.get(), CauldronInteraction.DYED_ITEM);
 
@@ -58,15 +61,15 @@ public class Events {
             CauldronInteraction.WATER.put(ModItems.DIAMOND_LEATHERED_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
             CauldronInteraction.WATER.put(ModItems.DIAMOND_LEATHERED_BOOTS.get(), CauldronInteraction.DYED_ITEM);
 
-            CauldronInteraction.WATER.put(ModItems.GOLD_LEATHERED_HELMET.get(), CauldronInteraction.DYED_ITEM);
-            CauldronInteraction.WATER.put(ModItems.GOLD_LEATHERED_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
-            CauldronInteraction.WATER.put(ModItems.GOLD_LEATHERED_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
-            CauldronInteraction.WATER.put(ModItems.GOLD_LEATHERED_BOOTS.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.GOLDEN_LEATHERED_HELMET.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.GOLDEN_LEATHERED_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.GOLDEN_LEATHERED_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.GOLDEN_LEATHERED_BOOTS.get(), CauldronInteraction.DYED_ITEM);
 
-            CauldronInteraction.WATER.put(ModItems.CHAIN_LEATHERED_HELMET.get(), CauldronInteraction.DYED_ITEM);
-            CauldronInteraction.WATER.put(ModItems.CHAIN_LEATHERED_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
-            CauldronInteraction.WATER.put(ModItems.CHAIN_LEATHERED_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
-            CauldronInteraction.WATER.put(ModItems.CHAIN_LEATHERED_BOOTS.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.CHAINMAIL_LEATHERED_HELMET.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.CHAINMAIL_LEATHERED_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.CHAINMAIL_LEATHERED_LEGGINGS.get(), CauldronInteraction.DYED_ITEM);
+            CauldronInteraction.WATER.put(ModItems.CHAINMAIL_LEATHERED_BOOTS.get(), CauldronInteraction.DYED_ITEM);
 
             CauldronInteraction.WATER.put(ModItems.IRON_LEATHERED_HELMET.get(), CauldronInteraction.DYED_ITEM);
             CauldronInteraction.WATER.put(ModItems.IRON_LEATHERED_CHESTPLATE.get(), CauldronInteraction.DYED_ITEM);
